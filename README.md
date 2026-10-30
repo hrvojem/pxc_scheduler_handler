@@ -476,6 +476,8 @@ go build -o pxc_scheduler_handler ./cmd/pxc-scheduler-handler/
 
 Run `./pxc_scheduler_handler --help` to see the available parameters.
 
+Run the tests with `go test ./internal/...`. Some tests fail on purpose until known defects are fixed; see [docs/TESTING.md](./docs/TESTING.md) for what the tests cover, how to skip the known failures, fuzzing, coverage and mutation testing.
+
 Copy and adjust the sample config file:
 ```bash
 cp config/config.toml config/my_config.toml
